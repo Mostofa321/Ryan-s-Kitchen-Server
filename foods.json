@@ -1,0 +1,38 @@
+[
+    {
+        "foodName":"Rice",
+        "price": 40,
+        "image": "https://ibb.co/fFyNPny",
+        "description":"Health Benefits: What are the health benefits of eating chicken? Chicken Contains Nutrients Linked with Mood. Chicken Provides Vitamins and Minerals Involved in Brain Function. Chicken Builds Muscle Chicken is a source of high-quality dietary protein. 30 grams of protein per meal could benefit muscle growth. Chicken Strengthens Bones. Chicken is a source of dietary protein. Protein can benefit bone health. Chicken Promotes Heart Health. Chicken provides under-consumed vitamins and minerals, and can be center of the plate for a heart-healthy, low-fat, low-cholesterol diet, such as the DASH diet. Chicken Aids in Weight Loss. Lean chicken meat is an excellent source of protein that the body can use easily. Foods high in protein may be a tool for managing weight and a normal blood sugar."
+    },
+    {
+        "foodName":"Salmon Fish",
+        "price": 80,
+        "image": "https://ibb.co/bF8TNr3",
+        "description":"Salmon health benefits : 1. Rich in omega-3 fatty acids. 2. Great source of protein. 3. High in B vitamins. 4. Good source of potassium. 5. Loaded with selenium. 6. Contains astaxanthin. 7. May reduce the risk of heart disease. 8. May benefit weight management. 9. Can help prevent inflammation. 10. May protect brain health. 11. Can improve mental health. 12. May help maintain healthy vision. 13. Could support bone health. 14. Delicious and versatile"
+    },
+    {
+        "foodName":"Salad",
+        "price": 20,
+        "image": "https://ibb.co/3dVdjNw",
+        "description":"What are the Benefits of Eating Salads? 1. Healthy Salads Help You Get Enough Fruits and Vegetables. 2. Vegetable and Fruit Salads are Full of Fibre. 3. Healthy Salads Cut Calorie Consumption. 4. You’ll Get Access to Good Fats. 5. A Salad Provides Water. 6. Salads Can Cool You Down"
+    },
+    {
+        "foodName":"Fried Chicken",
+        "price": 300,
+        "image": "https://ibb.co/NWwV7jz",
+        "description":"Health Benefits: What are the health benefits of eating chicken? Chicken Contains Nutrients Linked with Mood. Chicken Provides Vitamins and Minerals Involved in Brain Function. Chicken Builds Muscle Chicken is a source of high-quality dietary protein. 30 grams of protein per meal could benefit muscle growth. Chicken Strengthens Bones. Chicken is a source of dietary protein. Protein can benefit bone health. Chicken Promotes Heart Health. Chicken provides under-consumed vitamins and minerals, and can be center of the plate for a heart-healthy, low-fat, low-cholesterol diet, such as the DASH diet. Chicken Aids in Weight Loss. Lean chicken meat is an excellent source of protein that the body can use easily. Foods high in protein may be a tool for managing weight and a normal blood sugar."
+    },
+    {
+        "foodName":"Egg Bowl",
+        "price": 20,
+        "image": "https://ibb.co/CJLj65n",
+        "description":"Health Benefits: What are the health benefits of eating chicken? Chicken Contains Nutrients Linked with Mood. Chicken Provides Vitamins and Minerals Involved in Brain Function. Chicken Builds Muscle Chicken is a source of high-quality dietary protein. 30 grams of protein per meal could benefit muscle growth. Chicken Strengthens Bones. Chicken is a source of dietary protein. Protein can benefit bone health. Chicken Promotes Heart Health. Chicken provides under-consumed vitamins and minerals, and can be center of the plate for a heart-healthy, low-fat, low-cholesterol diet, such as the DASH diet. Chicken Aids in Weight Loss. Lean chicken meat is an excellent source of protein that the body can use easily. Foods high in protein may be a tool for managing weight and a normal blood sugar."
+    },
+    {
+        "foodName":"Egg Omelette",
+        "price": 20,
+        "image": "https://ibb.co/Rz6KHgJ",
+        "description":"Health Benefits: What are the health benefits of eating chicken? Chicken Contains Nutrients Linked with Mood. Chicken Provides Vitamins and Minerals Involved in Brain Function. Chicken Builds Muscle Chicken is a source of high-quality dietary protein. 30 grams of protein per meal could benefit muscle growth. Chicken Strengthens Bones. Chicken is a source of dietary protein. Protein can benefit bone health. Chicken Promotes Heart Health. Chicken provides under-consumed vitamins and minerals, and can be center of the plate for a heart-healthy, low-fat, low-cholesterol diet, such as the DASH diet. Chicken Aids in Weight Loss. Lean chicken meat is an excellent source of protein that the body can use easily. Foods high in protein may be a tool for managing weight and a normal blood sugar."
+    }
+]
