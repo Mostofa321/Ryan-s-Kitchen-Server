@@ -29,12 +29,27 @@ const run = async () => {
     app.post('/food', async (req, res) => {
       const food = req.body;
       const result = await foodCollection.insertOne(food);
-      console.log(`A document was inserted with the _id: ${result.insertedId}`);
+      // console.log(`A document was inserted with the _id: ${result.insertedId}`);
       res.send(result);
     });
+    // read all user from database 
+    app.get('/food', async (req, res) => {
+      const home = req.query?.home;
+      console.log(home);
+      const query = {};
+      const cursor = foodCollection.find(query);
+      let result ; 
+      if(home){
+        result = await cursor.limit(3).toArray();
+      }else{
+        result = await cursor.toArray();
+      };
+      if (result) {
+        res.send(result);
+      }
+    });
 
-    
- 
+
   }
   catch (err) {
     console.log(err.name, err.message, err.stack)
