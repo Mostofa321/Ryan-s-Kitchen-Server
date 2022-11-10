@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 5000;
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config();
 
 
@@ -24,6 +24,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 const run = async () => {
   try {
     const foodCollection = client.db("foodsDb").collection("foodsCollection");
+    const reviewCollection = client.db("reviewDb").collection("reviewCollection");
 
     // send food to database 
     app.post('/food', async (req, res) => {
@@ -32,18 +33,44 @@ const run = async () => {
       // console.log(`A document was inserted with the _id: ${result.insertedId}`);
       res.send(result);
     });
-    // read all user from database 
+    // read all food from database 
     app.get('/food', async (req, res) => {
       const home = req.query?.home;
       console.log(home);
       const query = {};
       const cursor = foodCollection.find(query);
-      let result ; 
-      if(home){
+      let result;
+      if (home) {
         result = await cursor.limit(3).toArray();
-      }else{
+      } else {
         result = await cursor.toArray();
       };
+      if (result) {
+        res.send(result);
+      }
+    });
+    // read a food from database 
+    app.get('/food/:id', async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await foodCollection.findOne(query);
+      if (result) {
+        res.send(result);
+      }
+    });
+    // send review to database 
+    app.post('/review', async (req, res) => {
+      const review = req.body;
+      const result = await reviewCollection.insertOne(review);
+      // console.log(`A document was inserted with the _id: ${result.insertedId}`);
+      res.send(result);
+    });
+    // read reviews of a food from database 
+    app.get('/review', async (req, res) => {
+      const foodName = req.query?.foodName;
+      const query = {foodName: foodName};
+      const cursor = reviewCollection.find(query);
+      const result = await cursor.toArray();
       if (result) {
         res.send(result);
       }
